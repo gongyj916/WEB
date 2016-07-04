@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Html行列元素与块级元素</title>
+</head>
+
+<body>
+    <!-- html行内元素 -->
+    <!-- link -->
+    普通链接：<a href="http://www.baidu.com">百度链接</a>
+    <br/> 图片链接：
+    <a href="http://www.baidu.com" target="_bank"><img src="bd_logo1.png" alt="这是百度查询"  width="270px" length="129px"/></a>
+    <br/> 邮件链接：
+    <a href="mailto:gongyi@aisiainfo.com&cc=jirr@asiainfo.com">发送邮件</a>
+    <!-- 图片 -->
+    <img src="bd_logo1.png" alt="这是百度查询"  width="270px" length="129px">
+    <!-- 文档中的内联元素 -->
+    <span>文档中的内联元素</span>
+    <br>
+    <!-- 文本格式化标签 -->
+    <b>加粗文本</b>
+    <br>
+    <i>斜体文本</i>
+    <br>
+    <em>强调文本</em>
+    <br>
+    <strong>重要的文本</strong>
+    <br>
+    <sub>下标</sub><sup>上标</sup>
+    <br>
+    <del>删除的文本</del>
+    <br>
+    <ins>插入的文本</ins>
+    <br>
+    <small>更小的文本</small>
+    <br>
+    <!-- 实体 -->
+    &lt;等同于左尖括号
+    < &gt;等同于右尖括号>
+        &#169;等同于©
+        <!-- 表单元素 -->
+        <form action="test.do">
+           名字：<input type="text" name="myname"><br>
+           密码：<input type="paaword" name="pass"><br>
+           性别（单选）：<input type="radio" name="sex" value="man">男
+                         <input type="radio" name="sex" value="feman">女<br>
+            <td>
+                <tr>爱好（多选）</tr>
+                <tr>
+                    <input type="checkbox" name="love" value="鱼">鱼
+                    <input type="checkbox" name="love" value="水果">水果
+                    <input type="checkbox" name="love" value="酒">酒</tr>
+            </td><br>
+            <td>
+                <tr>textarea:</tr>
+                <tr>
+                    <textarea name="test" id="test" cols="30" rows="10" placeholder="请出入内容"></textarea>
+                </tr>
+            </td><br>
+            <!-- 选项元素 -->
+            <td>
+                <tr>select:</tr>
+                <tr>
+                    <select name="testselect" id="testselect">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </tr>
+            </td><br>
+            <input type="submit" name="sub">
+        </form>
+
+        <!-- ***************块级元素***************** -->
+        <!-- 分割线 -->
+        <hr>
+        <div>文档中的块级元素并没有什么语义，</div>
+        <!-- h1 至 h6 -->
+        <h1>哈哈，我是块级元素标题1</h1>
+        <!-- 段落p -->
+        <p>我是一个段落。。。。。</p>
+		<!-- 有序列表 -->
+		<ol>
+			<li>java</li>
+			<li>js</li>
+			<li>python</li>
+		</ol>
+		<!-- 无序列表 -->
+		<ul>
+			<li>java</li>
+			<li>c++</li>
+			<li>js</li>
+			<li>css</li>
+		</ul>
+		<!-- 自定义列表 -->
+		<dl>
+			<dt>小红</dt>
+			<dd>美女</dd>
+			<dt>小明</dt>
+			<dd>帅哥</dd>
+		</dl>
+		<!-- table表格标签 -->
+		<table border="1">
+			<caption>课程表</caption>
+			<thead>
+				<tr>
+					<th colspan="2"></th>
+					<th>星期一</th>
+					<th>星期二</th>
+					<th>星期三</th>
+					<th>星期四</th>
+					<th>星期五</th>
+				</tr>
+			</thead>
+			<tobody>
+				<tr>
+					<td rowspan="4">上午</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>	
+					<td>4</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="7"></td>
+				</tr>
+				<tr>
+					<td rowspan="2">下午</td>
+					<td>5</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tobody>
+		</table>
+		<!-- 框架 -->
+		<iframe src="http://www.baidu.com" frameborder="0" width="1000px" heigh="800px"></iframe>
+</body>
+
+</html>

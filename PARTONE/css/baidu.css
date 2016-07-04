@@ -1,0 +1,209 @@
+body,
+p,
+form,
+ul,
+li {
+    /*margin：从自身div到另一个div边框之间的距离，就是容器外距离。
+
+      padding：div到自身内部另一个容器边框之间的距离，就是容器内距离
+      padding:10px 20px 30px 40px; 上、右、下、左内边距*/
+    margin: 0;
+    padding: 0;
+    /*list-style在一个声明中设置所有的列表属性*/
+    list-style: none;
+}
+body{
+	    font: 12px arial;
+	    background: #fff;
+}
+
+p {
+    /*将显示为块级元素，此元素前后会带有换行符。*/
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#top {
+    height: 100px;
+    float: right;
+}
+
+#top a.mnav, #top a.mnav:visited {
+    float: left;
+    color: #333;
+    /*定义粗体字符 
+    normal 默认值。定义标准的字符。bold    定义粗体字符。
+    bolder  定义更粗的字符。lighter 定义更细的字符。
+    100，200，300，400，500，600，700，800，900
+    定义由粗到细的字符。400 等同于 normal，而 700 等同于 bold。
+    inherit 规定应该从父元素继承字体的粗细。*/
+    font-weight: bold;
+    /*设置行间的距离*/
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+#top a.lb, #top a.lb:visited, #top a.username {
+    /*将显示为行内块元素。*/
+    display: inline-block;
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    /*定义文本下的一条线，
+    overline    定义文本上的一条线。
+    line-through    定义穿过文本下的一条线。
+    blink   定义闪烁的文本。*/
+    text-decoration: underline;
+}
+
+#top a.pf, #top a.pf:visited {
+    display: inline-block;
+    float: left;
+    color: #333;
+    line-height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    /*当内容溢出元素框时，会被截断*/
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+#top a.bri, #top a.bri:visited {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+}
+
+
+#center {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: 60px;
+    clear: both;
+}
+
+#botton {
+    height: 100px;
+    position: absolute;
+    bottom: 23px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    overflow: hidden;
+}
+#qrcode {
+	/*行内块元素*/
+    display: inline-block;
+}
+#qrcode #moble .moble_img {
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_62c636fe.png) 0 0 no-repeat;
+}
+
+#qrcode #nuomi .nuomi_img {
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/nuomi_510f7472.png) 0 0 no-repeat;
+}
+#qrcode .moble_img, #qrcode .nuomi_img{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+#qrcode .moble_text, #qrcode .nuomi_text{
+    float: left;
+    color: #999;
+    line-height: 8px;
+    margin: 8px 0 0 10px;
+}
+
+
+#moble {
+    float: left;
+}
+
+#nuomi {
+	margin-left: 33px;
+    float: left;
+}
+
+#bto_text, #bto_text a {
+    color: #999;
+}
+
+#bto_text {
+    display: inline-block;
+    text-align: left;
+    margin-left: 33px;
+    line-height: 22px;
+    position: relative;
+    top: -2px;
+}
+
+.text {
+    width: 543px;
+    height: 32px
+}
+/*没实现效果*/
+#jgwab .c-icon-jgwablogo {
+    background-position: -623px -96px;
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+}
+#cp .c-icon-icrlogo, #jgwab .c-icon-jgwablogo {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_0e814c16.png) no-repeat;
+    _background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5c448026.gif);
+}
+/*-----------------------------------------------------------------------------------------*/
+
+.center_submit {
+    width: auto;
+    height: auto;
+    /*边框线的类型有九个确定值：none（无边框线）、 dotted（由点组成的虚线）、 dashed（由短线组成的虚线）、 
+    solid（实线）、 double（双线，双线宽度加上它们之间的空白部分的宽度就等于border-width定义的宽度）、 
+    groove（3D沟槽状的边框）、 ridge（3D脊状的边框）、 inset（3D内嵌边框，颜色较深）、 outset（3D外嵌边框，
+    颜色较浅）*/
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    background-position: -120px -48px;
+    z-index: 0;
+    vertical-align: top;
+}
+
+.s_btn {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    /*letter-spacing添加字母之间的空白*/
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
